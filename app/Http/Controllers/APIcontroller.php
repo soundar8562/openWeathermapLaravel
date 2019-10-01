@@ -64,11 +64,11 @@ class APIcontroller extends Controller
 	public function city(Request $req)
 	{
 		$city=$req->city;
-		$url ="http://api.openweathermap.org/data/2.5/forecast?q=$city&APPID=face8e6010b8225cdc1456350031f406";
+		$url ="http://api.openweathermap.org/data/2.5/forecast?q=$city&APPID=your_api_id";
 		$arr=file_get_contents($url);
 		$apiret=json_decode($arr);
 		$city_id=$apiret->city->id;
-		$url ="http://api.openweathermap.org/data/2.5/weather?id=$city_id&lang=en&units=metric&APPID=face8e6010b8225cdc1456350031f406";
+		$url ="http://api.openweathermap.org/data/2.5/weather?id=$city_id&lang=en&units=metric&APPID=your_api_id";
 		$arr=file_get_contents($url);
 		$apiret=json_decode($arr);
 		
