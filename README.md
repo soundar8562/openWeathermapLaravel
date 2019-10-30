@@ -15,4 +15,4 @@ This cmd will create "city table" which is going to contain all city list
 Note: You can import the all city list to your table by go thorugh this link - your_project_url/create
 
 ****************************************************************************************************
-Make an issue section to for issues.
+Make the issue section to for issues.
